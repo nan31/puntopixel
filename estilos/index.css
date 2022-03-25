@@ -99,8 +99,9 @@ header .menu__item{
     padding: 1rem ;
 }
 .logo{
-    padding-top: 2.5em;
-    transform: scale(250%);
+    padding-top: 1.5em;
+    transform: scale(150%);
+    padding-left: 7em;
 }
 
 /* nav ul{
