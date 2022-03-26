@@ -39,7 +39,7 @@ a{
     text-decoration: none;
     display: inline-block;
     color: var(--secondary)
-} 
+}
 
 /*Helpers*/
 
@@ -62,16 +62,56 @@ a{
 /* header{
     background-color: var(--principal);
     display: flex;
-    text-decoration: none; 
+    text-decoration: none;
     list-style: none;
 } */
 
 header{
     background-color: var(--principal);
-    text-decoration: none; 
+    text-decoration: none;
     list-style: none;
 }
 
+.navv{
+    display: flex;
+    justify-content:center;
+    max-width: auto;
+    background-color: var(--principal);
+    font-size: 15px;
+}
+.bg-light{
+    --bs-bg-opacity:0;
+}
+
+.pagprincipal{
+    gap:100px;
+    margin-top: 10px;
+}
+.card-text{
+    display: flex;
+}
+.pyserv{
+    /* display:flex; */
+    gap: 0px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.card{
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+/* .card{
+    display: flex;
+    align-content: center;
+    padding: 0%;
+    font-size: 20px;
+    max-width: 100%;
+}
+.imgquienesomos{
+    display: flex;
+} */
 header .navbar{
     min-height: 10vh;
     justify-content: space-between;
@@ -87,9 +127,9 @@ header .menu{
     flex-basis: 80%;
     justify-content: space-between;
 }
-header .menu__item{ 
+header .menu__item{
     border: 2px solid var(--principal);
-} 
+}
 
  /* header .menu__item:hover{
     border: 2px solid white;
@@ -132,7 +172,7 @@ header .menu__item{
 
 /* nav ul{
     list-style: none;
-    display: inline-block; 
+    display: inline-block;
 } */
 
 /* .menu>li{
@@ -183,7 +223,7 @@ form{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
+    grid-template-areas:
     "parrafo parrafo parrafo"
     "img1 img2 img3"
 }
@@ -269,9 +309,9 @@ img{
     body{
         justify-content: center;
     }
-    
+
     header{
-      padding: 2em;  
+      padding: 2em;
     }
     header .navbar{
         flex-wrap: wrap;
@@ -297,7 +337,7 @@ img{
         "img2"
     }
     .menu{
-    font-size: 0.7em;    
+    font-size: 0.7em;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr);
     }
@@ -307,7 +347,7 @@ img{
         font-size: 1.1em;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,1fr);
-        grid-template-areas: 
+        grid-template-areas:
         "p1"
         "imagenA"
         "p2"
@@ -345,8 +385,8 @@ footer{
     padding: 1rem;
     display: flex;
     justify-content:right;
-    border: 3rem; 
-}  
+    border: 3rem;
+}
 
 footer>a{
     display: inline-block;
