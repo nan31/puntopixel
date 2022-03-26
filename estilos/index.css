@@ -331,6 +331,9 @@ img{
         font-size: 1em;
         margin: 5%;
     }
+    footer>a{
+        padding: 1rem;
+    }
 }
 
 /*footer*/
