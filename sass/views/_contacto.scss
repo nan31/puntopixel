@@ -1,0 +1,14 @@
+form{
+    padding: 5rem;
+    margin: 10%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    form{
+        justify-content: center;
+        font-size: 1em;
+        margin: 5%;
+
+    }
+}

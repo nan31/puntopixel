@@ -1,0 +1,44 @@
+/*Reset*/
+*,
+::before
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mitr', sans-serif;
+}
+
+
+/*Globals*/
+
+html{
+    font-size: 62.5%;
+    // font-family: $font-primary;
+    font-family: "Mitr";
+}
+ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    // background-image: linear-gradient(to top, #d68233, $secondary, $secondary, $secondary, #d68233);
+    background-image: linear-gradient(to top, #d68233, white, white, white, #d68233);
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+}
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    // color: $secondary;
+    color: white;
+} 
+
+@media screen and (max-width: 768px){
+    body{
+        justify-content: center;
+    }
+}

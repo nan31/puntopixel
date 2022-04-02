@@ -1,0 +1,19 @@
+.articuloPpal{
+    align-items: center;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 5rem;
+    text-align:center ;
+    box-sizing: border-box;
+}
+
+picture{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px){
+    .articuloPpal{
+        flex-wrap: wrap;
+    }
+}

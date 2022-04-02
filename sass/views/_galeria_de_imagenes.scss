@@ -1,0 +1,44 @@
+.galeriaDeImagenes{
+    gap: 00rem;
+    padding: 10rem;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3.1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+    "aa bb cc"
+    "dd ee ff"
+}
+.aa{
+  grid-area: aa;
+}
+.bb{
+    grid-area: bb;
+}
+.cc{
+    grid-area: cc;
+}
+.dd{
+    grid-area: dd;
+}
+.ee{
+    grid-area: ee;
+}
+.ff{
+    grid-area: ff;
+}
+
+@media screen and (max-width: 768px){
+
+    .galeriaDeImagenes{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas:
+        "aa"
+        "bb"
+        "cc"
+        "dd"
+        "ee"
+        "ff"
+    }
+}

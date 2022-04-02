@@ -1,0 +1,18 @@
+header .menu__item{
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    }
+    header .menu__item:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+    }
+    header .menu__item:hover:after {
+    width: 100%;
+    background: white;
+    }

@@ -1,0 +1,23 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mitr&display=swap' );
+
+//  miscelaneous 
+
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/mixins';
+@import './misc//animations';
+
+/* partials */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* views */
+
+@import './views/home';
+@import './views/quienes_somos';
+@import './views/productos_y_servicios';
+@import './views/galeria_de_imagenes';
+@import './views/contacto';
