@@ -9,6 +9,7 @@
     "aa bb cc"
     "dd ee ff"
 }
+
 .aa{
   grid-area: aa;
 }
@@ -27,6 +28,7 @@
 .ff{
     grid-area: ff;
 }
+
 
 @media screen and (max-width: 768px){
 

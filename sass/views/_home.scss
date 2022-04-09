@@ -1,5 +1,6 @@
 .articuloPpal{
-    align-items: center;
+    // align-items: center;
+    @include flex(row, space-between, center, 5rem, nowrap); 
     font-size: 1.2em;
     width: 100%;
     padding: 5rem;

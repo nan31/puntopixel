@@ -1,5 +1,6 @@
 header {
     // background-color: $principal;
+    text-align: center;
     background-color: #d68233;
     text-decoration: none;
     list-style: none;
@@ -7,6 +8,7 @@ header {
 
     & .navbar {
         min-height: 10vh;
+        @include flex(row, space-between, center, 5 5rem);
         justify-content: space-between;
         align-items: center;
         padding: 5 5rem;
@@ -14,8 +16,8 @@ header {
 
     & .menu {
     flex-basis: 80%;
-    justify-content: space-between;
-    }
+    @include flex(row, space-between, center, 5 5rem);
+}
 
     & .menu__item {
  border: 2px solid #d68233;
@@ -44,6 +46,13 @@ header {
 .menu .menu__item .menu__link{
     font-size: 1.8em;
     padding: 1rem ;
+
+        &--active {
+            @extend .menu__link;
+              border-bottom: 3px solid white;
+         }
+    
+
 }
 .logo {
     padding-top: 1.5em;
@@ -60,11 +69,13 @@ header {
 @media screen and (max-width: 768px) {
     header {
         padding: 2em;
+        text-align: center;
     }
 
     &.navbar {
         flex-wrap: wrap;
         justify-content: center;
+
 
     }
 
@@ -73,8 +84,10 @@ header {
     }
 
     .menu {
+        flex-basis: 0%;
         font-size: 0.7em;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr);
     }
+    @include flex(row, space-between, center, 5 5rem);
 }

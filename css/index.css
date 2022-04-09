@@ -1,8 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr&display=swap");
+.img-pxlfadu {
+  display: row;
+  width: 290px;
+  height: 290px;
+  margin: 10%;
+  background-size: cover;
+  background-image: url("../img/pxlfadu.png"); }
+
+.img-pxlsirius {
+  display: row;
+  width: 290px;
+  height: 290px;
+  margin: 10%;
+  background-size: cover;
+  background-image: url("../img/pxlsirius.png"); }
+
+.img-pxlnotebook {
+  display: row;
+  width: 290px;
+  height: 290px;
+  margin: 10%;
+  background-size: cover;
+  background-image: url("../img/pxlnotebook.png"); }
+
 /*Reset*/
 *,
-::before
-::after {
+::before ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -64,18 +87,30 @@ header .menu__item:hover:after {
 
 /* partials */
 header {
+  text-align: center;
   background-color: #d68233;
   text-decoration: none;
   list-style: none;
   font-family: "Mitr"; }
   header .navbar {
     min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5 5rem;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 5 5rem; }
   header .menu {
     flex-basis: 80%;
-    justify-content: space-between; }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5 5rem;
+    flex-wrap: wrap; }
   header .menu__item {
     border: 2px solid #d68233; }
 
@@ -98,9 +133,11 @@ header {
         background: white;
         }
 */
-.menu .menu__item .menu__link {
+.menu .menu__item .menu__link, .menu .menu__item .menu__link--active {
   font-size: 1.8em;
   padding: 1rem; }
+  .menu .menu__item .menu__link--active {
+    border-bottom: 3px solid white; }
 
 .logo {
   padding-top: 1.5em;
@@ -112,16 +149,24 @@ header {
 
 @media screen and (max-width: 768px) {
   header {
-    padding: 2em; }
+    padding: 2em;
+    text-align: center; }
   .navbar {
     flex-wrap: wrap;
     justify-content: center; }
   .logo {
     transform: scale(100%); }
   .menu {
+    flex-basis: 0%;
     font-size: 0.7em;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(1fr); } }
+    grid-template-rows: repeat(1fr); }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5 5rem;
+  flex-wrap: wrap; }
 
 footer {
   align-items: center;
@@ -147,7 +192,12 @@ footer {
 
 /* views */
 .articuloPpal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  gap: 5rem;
+  flex-wrap: nowrap;
   font-size: 1.2em;
   width: 100%;
   padding: 5rem;
@@ -168,22 +218,20 @@ picture {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "parrafo parrafo parrafo" "img1 img2 img3"; }
-
-img {
-  width: auto; }
+  grid-template-areas: "parrafo parrafo parrafo" "pxlsirius pxlfadu pxlnotebook"; }
 
 .parrafo {
-  grid-area: parrafo; }
+  grid-area: parrafo;
+  padding: 3rem; }
 
-.img1 {
-  grid-area: img1; }
+.pxlfadu {
+  grid-area: pxlfadu; }
 
-.img2 {
-  grid-area: img2; }
+.pxlsirius {
+  grid-area: pxlsirius; }
 
-.img3 {
-  grid-area: img3; }
+.pxlnotebook {
+  grid-area: pxlnotebook; }
 
 @media screen and (max-width: 768px) {
   .quienesSomos {
@@ -192,7 +240,7 @@ img {
     font-size: 1.1em;
     justify-content: center;
     grid-template-columns: 1fr;
-    grid-template-areas: "parrafo" "img1" "img3" "img2"; } }
+    grid-template-areas: "parrafo" "pxlsirius" "pxlnotebook" "pxlfadu"; } }
 
 .productosServicios {
   font-size: 2em;

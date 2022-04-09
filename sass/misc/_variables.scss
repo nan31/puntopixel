@@ -6,3 +6,28 @@
     $text-lg: 1.8em;
     $text-md: 1.6em;
 } 
+
+$images: (
+    pxlfadu: 'pxlfadu',
+    pxlsirius: 'pxlsirius',
+    pxlnotebook: 'pxlnotebook',
+);
+
+@each $image, $value in $images {
+   .img-#{$image} {
+     display: row;   
+     width: 290px;
+      height: 290px;
+       margin: 10%;
+       background-size: cover;
+       background-image: url('../img/#{$image}.png');
+   }
+}
+
+$paddings: (
+    xlarge: 5rem,
+    large: 3rem,
+    medium: 2rem,
+    small: 1.5rem,
+    xsmall: 1rem,
+);

@@ -4,26 +4,24 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
+    grid-template-areas:
     "parrafo parrafo parrafo"
-    "img1 img2 img3"
+    "pxlsirius pxlfadu pxlnotebook"
 }
-img{
-    width: auto;
-}
-
 .parrafo{
     grid-area: parrafo;
+    padding: map-get($paddings, large);
 }
-.img1{
-    grid-area: img1;
+.pxlfadu{
+    grid-area: pxlfadu;
 }
-.img2{
-    grid-area: img2;
+.pxlsirius{
+    grid-area: pxlsirius;
 }
-.img3{
-    grid-area: img3;
+.pxlnotebook{
+    grid-area: pxlnotebook;
 }
+
 
 @media screen and (max-width: 768px){
     .quienesSomos{
@@ -34,8 +32,8 @@ img{
         grid-template-columns: 1fr;
         grid-template-areas:
         "parrafo"
-        "img1"
-        "img3"
-        "img2"
+        "pxlsirius"
+        "pxlnotebook"
+        "pxlfadu"
     }
 }
