@@ -5,89 +5,91 @@ header {
     text-decoration: none;
     list-style: none;
     font-family: "Mitr";
+    margin-top: 3rem;
+    font-size: 0.6rem;
 
     & .navbar {
         min-height: 10vh;
         @include flex(row, space-between, center, 5 5rem);
-        justify-content: space-between;
         align-items: center;
         padding: 5 5rem;
     }
 
     & .menu {
-    flex-basis: 80%;
-    @include flex(row, space-between, center, 5 5rem);
-}
+        flex-basis: 65%;
+        @include flex(row, flex-end, center, 5 5rem);
 
-    & .menu__item {
- border: 2px solid #d68233;
+
+        & .menu__item {
+            border: 2px solid #d68233;
+        }
     }
 
-}
-    /*header .menu__item{
-        display: inline-block;
-        position: relative;
-        color: white;
-        text-decoration: none;
-        }
-        header .menu__item:after {
-        content: "";
-        display: block;
-        margin: auto;
-        height: 2px;
-        width: 0px;
-        transition: all .8s;
-        }
-        header .menu__item:hover:after {
-        width: 100%;
-        background: white;
-        }
-*/
-.menu .menu__item .menu__link{
-    font-size: 1.8em;
-    padding: 1rem ;
+    & .menu__link {
+        font-size: 1.8em;
+        padding: 1rem;
 
         &--active {
             @extend .menu__link;
-              border-bottom: 3px solid white;
-         }
-    
+            border-bottom: 3px solid white;
+        }
+    }
 
 }
+
 .logo {
-    padding-top: 1.5em;
-    transform: scale(150%);
-    padding-left: 6em;
+    padding-top: 0.5rem;
+    height: 50px;
+    width: 50px;
+    transform: scale(250%);
+    padding-left: 6rem;
     transition: transform 30ms ease-in-out;
 
-    &:hover {
-        transform: scale(160%);
-    }
+
+    // &:hover {
+    //     // transform: scale(160%);
+    // }
 }
 
 
 @media screen and (max-width: 768px) {
     header {
-        padding: 2em;
         text-align: center;
+        align-items: center;
     }
 
     &.navbar {
         flex-wrap: wrap;
         justify-content: center;
-
-
+        flex-direction: column !important;
+        align-items: center;
     }
 
     .logo {
-        transform: scale(100%);
+        transform: scale(200%);
+        padding-right: 6rem;
+        padding-top: 1.5rem;
     }
 
     .menu {
-        flex-basis: 0%;
-        font-size: 0.7em;
+        flex-basis: 80%;
+        // font-size: 0.7em;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr);
     }
+
     @include flex(row, space-between, center, 5 5rem);
+}
+
+@media screen and (max-width: 560px) {
+
+    header {
+        text-align: center;
+        align-items: center;
+        font-size: 0.65em;
+ 
+    }
+    .logo{
+        padding-top: 1.5rem;
+    }
 }

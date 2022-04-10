@@ -91,7 +91,9 @@ header {
   background-color: #d68233;
   text-decoration: none;
   list-style: none;
-  font-family: "Mitr"; }
+  font-family: "Mitr";
+  margin-top: 3rem;
+  font-size: 0.6rem; }
   header .navbar {
     min-height: 10vh;
     display: flex;
@@ -100,65 +102,47 @@ header {
     align-items: center;
     gap: 5 5rem;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     padding: 5 5rem; }
   header .menu {
-    flex-basis: 80%;
+    flex-basis: 65%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     gap: 5 5rem;
     flex-wrap: wrap; }
-  header .menu__item {
-    border: 2px solid #d68233; }
-
-/*header .menu__item{
-        display: inline-block;
-        position: relative;
-        color: white;
-        text-decoration: none;
-        }
-        header .menu__item:after {
-        content: "";
-        display: block;
-        margin: auto;
-        height: 2px;
-        width: 0px;
-        transition: all .8s;
-        }
-        header .menu__item:hover:after {
-        width: 100%;
-        background: white;
-        }
-*/
-.menu .menu__item .menu__link, .menu .menu__item .menu__link--active {
-  font-size: 1.8em;
-  padding: 1rem; }
-  .menu .menu__item .menu__link--active {
-    border-bottom: 3px solid white; }
+    header .menu .menu__item {
+      border: 2px solid #d68233; }
+  header .menu__link, header .menu__link--active {
+    font-size: 1.8em;
+    padding: 1rem; }
+    header .menu__link--active {
+      border-bottom: 3px solid white; }
 
 .logo {
-  padding-top: 1.5em;
-  transform: scale(150%);
-  padding-left: 6em;
+  padding-top: 0.5rem;
+  height: 50px;
+  width: 50px;
+  transform: scale(250%);
+  padding-left: 6rem;
   transition: transform 30ms ease-in-out; }
-  .logo:hover {
-    transform: scale(160%); }
 
 @media screen and (max-width: 768px) {
   header {
-    padding: 2em;
-    text-align: center; }
+    text-align: center;
+    align-items: center; }
   .navbar {
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    flex-direction: column !important;
+    align-items: center; }
   .logo {
-    transform: scale(100%); }
+    transform: scale(200%);
+    padding-right: 6rem;
+    padding-top: 1.5rem; }
   .menu {
-    flex-basis: 0%;
-    font-size: 0.7em;
+    flex-basis: 80%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr); }
   display: flex;
@@ -167,6 +151,14 @@ header {
   align-items: center;
   gap: 5 5rem;
   flex-wrap: wrap; }
+
+@media screen and (max-width: 560px) {
+  header {
+    text-align: center;
+    align-items: center;
+    font-size: 0.65em; }
+  .logo {
+    padding-top: 1.5rem; } }
 
 footer {
   align-items: center;
@@ -179,12 +171,13 @@ footer {
   footer > a {
     display: inline-block;
     width: 3%;
-    transition: transform 35ms ease-in-out; }
+    transition: transform 35ms ease-in-out;
+    filter: invert(1); }
   footer > a:hover {
     transform: scale(150%); }
 
 .copyright {
-  margin-left: 3rem; }
+  margin-right: 3rem; }
 
 @media screen and (max-width: 768px) {
   footer > a {

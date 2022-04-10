@@ -8,20 +8,24 @@ footer {
     border: 3rem;
 
 
-&>a {
-    display: inline-block;
-    width: 3%;
-    transition: transform 35ms ease-in-out;
+    &>a {
+        display: inline-block;
+        width: 3%;
+        transition: transform 35ms ease-in-out;
+        filter:invert(1)
+        }
+
+
+    &>a:hover {
+        transform: scale(150%);
+
+    }
+    
 }
 
 
-&>a:hover {
-    transform: scale(150%);
-
-}
-}
 .copyright {
-    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 @media screen and (max-width: 768px) {
