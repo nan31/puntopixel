@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mitr', sans-serif;
+    font-family: 'Mitr', sans-serif;    
 }
 
 
@@ -16,6 +16,8 @@ html{
     // font-family: $font-primary;
     font-family: "Mitr";
     // color: white;
+    color: rgb(255, 255, 255);
+    // text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
 }
 ul{
     list-style-type: none;
@@ -24,11 +26,11 @@ ul{
 
 body{
     // background-image: linear-gradient(to top, #d68233, $secondary, $secondary, $secondary, #d68233);
-    background-image: linear-gradient(to top, #d68233, white, white, white, #d68233);
+    // background-image: linear-gradient(to top, #d68233, white, white, white, #d68233);
     text-decoration: none;
     display: grid;
     grid-template-rows: auto 1fr auto ;
-    // background-image: url('https://static.vecteezy.com/system/resources/previews/005/880/495/large_2x/orange-lowpoly-background-free-vector.jpg')
+    background-image: url('https://static.vecteezy.com/system/resources/previews/005/880/495/large_2x/orange-lowpoly-background-free-vector.jpg')
 }
 a{
     text-decoration: none;
@@ -36,6 +38,15 @@ a{
     // color: $secondary;
     color: white;
 } 
+
+.box{
+    border: solid rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5rem;
+    gap:20px;
+}
 
 @media screen and (max-width: 768px){
     body{

@@ -6,7 +6,7 @@ header {
     list-style: none;
     font-family: "Mitr";
     margin-top: 3rem;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
 
     & .navbar {
         min-height: 10vh;
@@ -81,12 +81,14 @@ header {
     @include flex(row, space-between, center, 5 5rem);
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 625px) {
 
     header {
         text-align: center;
         align-items: center;
-        font-size: 0.65em;
+        font-size: 0.60em;
+        margin: 0px;
+        flex-direction: column;
  
     }
     .logo{
