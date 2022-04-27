@@ -1,5 +1,9 @@
 .quienesSomos{
-    max-width: 1080px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-basis: 65%;
+    max-width: inherit;
+    text-align: center;
     font-size: 2.1em;
     margin: 10%;
     display: grid;
@@ -11,7 +15,7 @@
 }
 .parrafo{
     grid-area: parrafo;
-    padding: map-get($paddings, large);
+    max-width: inherit;
 }
 .pxlfadu{
     grid-area: pxlfadu;
@@ -23,11 +27,11 @@
     grid-area: pxlnotebook;
 }
 
-
 @media screen and (max-width: 768px){
     .quienesSomos{
         flex-direction: column  ;
-        box-sizing: content-box;
+        flex-wrap: wrap;
+        box-sizing: border-box;
         font-size: 1.1em;
         justify-content: center;
         grid-template-columns: 1fr;

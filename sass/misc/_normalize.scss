@@ -28,8 +28,8 @@ body{
     // background-image: linear-gradient(to top, #d68233, $secondary, $secondary, $secondary, #d68233);
     // background-image: linear-gradient(to top, #d68233, white, white, white, #d68233);
     text-decoration: none;
-    display: grid;
-    grid-template-rows: auto 1fr auto ;
+    display: row;
+    // grid-template-rows: auto 1fr auto ;
     background-image: url('https://static.vecteezy.com/system/resources/previews/005/880/495/large_2x/orange-lowpoly-background-free-vector.jpg')
 }
 a{
@@ -46,6 +46,7 @@ a{
     margin: 20px;
     font-size: 1.5rem;
     gap:20px;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px){

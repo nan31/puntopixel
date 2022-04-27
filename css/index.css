@@ -43,8 +43,7 @@ ul {
 
 body {
   text-decoration: none;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: row;
   background-image: url("https://static.vecteezy.com/system/resources/previews/005/880/495/large_2x/orange-lowpoly-background-free-vector.jpg"); }
 
 a {
@@ -58,7 +57,8 @@ a {
   text-align: center;
   margin: 20px;
   font-size: 1.5rem;
-  gap: 20px; }
+  gap: 20px;
+  width: 100%; }
 
 @media screen and (max-width: 768px) {
   body {
@@ -104,7 +104,7 @@ header {
   margin-top: 3rem;
   font-size: 0.7rem; }
   header .navbar {
-    min-height: 10vh;
+    min-height: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,8 +121,6 @@ header {
     align-items: center;
     gap: 5 5rem;
     flex-wrap: wrap; }
-    header .menu .menu__item {
-      border: 2px solid #d68233; }
   header .menu__link, header .menu__link--active {
     font-size: 1.8em;
     padding: 1rem; }
@@ -136,6 +134,12 @@ header {
   transform: scale(250%);
   padding-left: 6rem;
   transition: transform 30ms ease-in-out; }
+
+.bar-btn {
+  font-size: 25px;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer; }
 
 @media screen and (max-width: 768px) {
   header {
@@ -174,11 +178,14 @@ header {
 footer {
   align-items: center;
   background-color: black;
+  max-width: 100%;
+  flex-basis: 65%;
   color: white;
   padding: 1rem;
   display: flex;
-  justify-content: right;
-  border: 3rem; }
+  justify-content: center;
+  border: 3rem;
+  gap: 2rem; }
   footer > a {
     display: inline-block;
     width: 3%;
@@ -203,7 +210,6 @@ footer {
   gap: 5rem;
   flex-wrap: nowrap;
   font-size: 2em;
-  width: 100%;
   padding: 5rem;
   text-align: center;
   box-sizing: border-box;
@@ -218,7 +224,11 @@ picture {
     flex-wrap: wrap; } }
 
 .quienesSomos {
-  max-width: 1080px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-basis: 65%;
+  max-width: inherit;
+  text-align: center;
   font-size: 2.1em;
   margin: 10%;
   display: grid;
@@ -228,7 +238,7 @@ picture {
 
 .parrafo {
   grid-area: parrafo;
-  padding: 3rem; }
+  max-width: inherit; }
 
 .pxlfadu {
   grid-area: pxlfadu; }
@@ -242,21 +252,24 @@ picture {
 @media screen and (max-width: 768px) {
   .quienesSomos {
     flex-direction: column;
-    box-sizing: content-box;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     font-size: 1.1em;
     justify-content: center;
     grid-template-columns: 1fr;
     grid-template-areas: "parrafo" "pxlsirius" "pxlnotebook" "pxlfadu"; } }
 
 .productosServicios {
-  font-size: 2em;
-  box-sizing: content-box;
-  gap: 5rem;
-  padding: 15rem;
-  display: flex;
+  font-size: 2.5em;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1.5rem;
+  padding: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "p1 imagenA" "p2 imagenB" "p3 imagenC"; }
 
 .p {
@@ -283,6 +296,8 @@ picture {
 @media screen and (max-width: 768px) {
   .productosServicios {
     justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
     align-content: center;
     font-size: 1.1em;
     grid-template-columns: 1fr;
@@ -290,9 +305,9 @@ picture {
     grid-template-areas: "p1" "imagenA" "p2" "imagenB" "p3" "imagenC"; } }
 
 .galeriaDeImagenes {
-  gap: 00rem;
+  box-sizing: border-box;
   padding: 10rem;
-  max-width: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3.1fr);
   grid-template-rows: repeat(2, 1fr);

@@ -9,7 +9,7 @@ header {
     font-size: 0.7rem;
 
     & .navbar {
-        min-height: 10vh;
+        min-height: 5vh;
         @include flex(row, space-between, center, 5 5rem);
         align-items: center;
         padding: 5 5rem;
@@ -20,9 +20,9 @@ header {
         @include flex(row, flex-end, center, 5 5rem);
 
 
-        & .menu__item {
-            border: 2px solid #d68233;
-        }
+        // & .menu__item {
+        //     // border: 2px solid #d68233;
+        // }
     }
 
     & .menu__link {
@@ -44,12 +44,20 @@ header {
     transform: scale(250%);
     padding-left: 6rem;
     transition: transform 30ms ease-in-out;
+}
+.bar-btn{
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
 
 
     // &:hover {
     //     // transform: scale(160%);
     // }
-}
+
 
 
 @media screen and (max-width: 768px) {

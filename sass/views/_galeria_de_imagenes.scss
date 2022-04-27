@@ -1,7 +1,7 @@
 .galeriaDeImagenes{
-    gap: 00rem;
+    box-sizing: border-box;
     padding: 10rem;
-    max-width: 100%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3.1fr);
     grid-template-rows: repeat(2,1fr);
