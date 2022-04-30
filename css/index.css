@@ -416,6 +416,10 @@ picture {
 .ff {
   grid-area: ff; }
 
+.gde {
+  width: 300px;
+  height: 300px; }
+
 @media screen and (max-width: 768px) {
   .galeriaDeImagenes {
     grid-template-columns: 1fr;
@@ -425,7 +429,10 @@ picture {
 @media screen and (max-width: 375px) {
   .galeriaDeImagenes {
     padding: 0%;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .gde {
+    height: 200px;
+    width: 200px; } }
 
 form {
   padding: 0rem;
