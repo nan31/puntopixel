@@ -2,6 +2,7 @@ header {
     // background-color: $principal;
     text-align: center;
     background-color: #d68233;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     font-family: "Mitr";
@@ -102,4 +103,10 @@ header {
         padding-top: 1.5rem;
     }
 
+}
+
+@media screen and (max-width: 538px) {
+     header{
+         font-size: 0.5em;
+     }   
 }
