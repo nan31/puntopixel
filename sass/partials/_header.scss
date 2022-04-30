@@ -95,11 +95,17 @@ header {
         text-align: center;
         align-items: center;
         font-size: 0.60em;
-        margin: 0px;
+        margin: 0;
         flex-direction: column;
+
+        &ul.menu{
+            margin-left: 0;
+        }
+
  
     }
     .logo{
         padding-top: 1.5rem;
     }
+
 }

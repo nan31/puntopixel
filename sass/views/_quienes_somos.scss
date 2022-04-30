@@ -32,9 +32,11 @@
         flex-direction: column  ;
         flex-wrap: wrap;
         box-sizing: border-box;
-        font-size: 1.1em;
+        font-size: 1.8em;
         justify-content: center;
+        text-align: center;
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
         "parrafo"
         "pxlsirius"
