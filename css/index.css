@@ -74,7 +74,8 @@ a {
 
 .container {
   max-width: 1080px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 header .menu__item {
   display: inline-block;
@@ -135,12 +136,6 @@ header {
   padding-left: 6rem;
   transition: transform 30ms ease-in-out; }
 
-.bar-btn {
-  font-size: 25px;
-  color: white;
-  margin-right: 20px;
-  cursor: pointer; }
-
 @media screen and (max-width: 768px) {
   header {
     text-align: center;
@@ -171,7 +166,9 @@ header {
     align-items: center;
     font-size: 0.60em;
     margin: 0;
-    flex-direction: column; }
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0%; }
     headerul.menu {
       margin-left: 0; }
   .logo {
@@ -229,8 +226,7 @@ picture {
   flex-wrap: wrap;
   box-sizing: border-box;
   flex-basis: 65%;
-  max-width: inherit;
-  text-align: center;
+  max-width: 85%;
   font-size: 2.1em;
   margin: 10%;
   display: grid;
@@ -258,6 +254,8 @@ picture {
     box-sizing: border-box;
     font-size: 1.8em;
     justify-content: center;
+    margin-top: 10rem;
+    gap: 5rem;
     text-align: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -267,7 +265,7 @@ picture {
   font-size: 2.5em;
   align-items: center;
   box-sizing: border-box;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   gap: 1.5rem;
   padding: 5rem;
@@ -343,8 +341,8 @@ picture {
     grid-template-areas: "aa" "bb" "cc" "dd" "ee" "ff"; } }
 
 form {
-  padding: 5rem;
-  margin: 10%;
+  padding: 0rem;
+  margin: 8%;
   justify-content: center;
   max-width: 1080px;
   font-size: 2rem; }
@@ -360,6 +358,9 @@ textarea {
   box-sizing: content-box;
   background-color: whitesmoke;
   width: 100%; }
+
+.value {
+  width: 10px; }
 
 @media screen and (max-width: 768px) {
   form {

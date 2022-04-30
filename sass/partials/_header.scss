@@ -45,14 +45,6 @@ header {
     padding-left: 6rem;
     transition: transform 30ms ease-in-out;
 }
-.bar-btn{
-    font-size: 25px;
-    color: white;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-
 
     // &:hover {
     //     // transform: scale(160%);
@@ -97,6 +89,8 @@ header {
         font-size: 0.60em;
         margin: 0;
         flex-direction: column;
+        max-width: 100%;
+        padding: 0%;
 
         &ul.menu{
             margin-left: 0;
