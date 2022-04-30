@@ -50,7 +50,12 @@ header {
     // &:hover {
     //     // transform: scale(160%);
     // }
-
+.hamburg{
+    display: none;
+}
+.menuHamburg{
+    display: none;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -62,7 +67,7 @@ header {
     &.navbar {
         flex-wrap: wrap;
         justify-content: center;
-        flex-direction: column !important;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -78,11 +83,13 @@ header {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr);
     }
-
+    
     @include flex(row, space-between, center, 5 5rem);
 }
 
 @media screen and (max-width: 625px) {
+
+
 
     header {
         text-align: center;
@@ -105,8 +112,77 @@ header {
 
 }
 
-@media screen and (max-width: 538px) {
-     header{
-         font-size: 0.5em;
-     }   
-}
+@media screen and (max-width: 855px) {
+    .logo{
+        display: flex;
+        padding-bottom: 1.5rem;
+
+    }
+    .menuHamburg{
+    display: flex;
+    }
+
+    nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    
+    }
+    
+    ul.menu{
+        display:none;
+      }
+      input.hamburg:checked  ~ ul.menu{
+        display:block;
+      }
+      
+    //   input.hamburg {
+    //     display: none;
+    //   }
+      
+      label.menuHamburg {
+        box-sizing: border-box;
+        flex-direction: row;
+        border-radius: 5px;
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        user-select: none;
+      }
+      
+    //   label.menuHamburg:hover{
+    //     background: rgb(236, 123, 89);
+    //   }
+      
+      input.menuHamburg:checked ~ label {
+        display: block; 
+      }
+      
+      li.menu__item.a{
+        margin-top:0;
+        padding: 0;
+        width: 300px;
+        flex-direction: column;
+        display: flex;
+      }
+      
+      
+      li.menu__item {
+        display: block;
+        margin: 0;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 10px;
+        list-style: none;
+      }
+      
+      li.menu__item:hover {
+        filter: brightness(500%);
+      }
+    }

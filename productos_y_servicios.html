@@ -21,17 +21,19 @@
 <body>
     <header> 
         <nav class="navbar flex-row container">  
-            <a class="animate__animated animate__bounce animate__delay-1s" href="index.html"><img class="logo" src="./img/logopxl.png" height="100px" width="100px" alt="logo"></a>  
+            <a class="animate__animated animate__bounce animate__delay-1s" href="index.html"><img class="logo" src="./img/logopxl.png" height="100px" width="100px" alt="logo"></a>
+            <input class="hamburg" type="checkbox" id="menu">
+            <label class="menuHamburg" for="menu"> ☰ </label>
             <ul class="menu">
-                <li class="menu__item"><a href=index.html class="menu__link">Home</a></li>
+                <li class="menu__item"><a href=index.html class="menu__link--active">Home</a></li>
                 <li class="menu__item"><a href=quienes_somos.html class="menu__link">Quienes Somos</a></li>
-                <li class="menu__item"><a href=productos_y_servicios.html class="menu__link--active">Productos y servicios</a></li>
+                <li class="menu__item"><a href=productos_y_servicios.html class="menu__link">Productos y servicios</a></li>
                 <li class="menu__item"><a href=galeria_de_imagenes.html class="menu__link">Galeria de imagenes</a></li>
                 <li class="menu__item"><a href=contacto.html class="menu__link">Contacto</a></li>                    
             </ul>
         </nav>
     </header>
-    <article class="productosServicios flex-row container">
+<article class="productosServicios flex-row container">
            <p class="p1">Realizamos tazas de ceramica importada, personalizadas, ya sea con tu logo para hacer que tu
                 negocio destaque o bien, para hacer que ese regalo sea inolvidable...</p>
             <picture class="imagenA"><img src="./img/starWars.png" height="400px" width="400px" alt="fotoDeProducto">
