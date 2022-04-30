@@ -368,6 +368,10 @@ picture {
 .imagenC {
   grid-area: imagenC; }
 
+.pys {
+  height: 300px;
+  width: 300px; }
+
 @media screen and (max-width: 768px) {
   .productosServicios {
     justify-content: center;
@@ -382,8 +386,8 @@ picture {
 
 @media screen and (max-width: 375px) {
   .pys {
-    width: 250px;
-    height: 250px; } }
+    width: 200px;
+    height: 200px; } }
 
 .galeriaDeImagenes {
   box-sizing: border-box;
