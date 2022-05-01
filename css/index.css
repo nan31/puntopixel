@@ -386,8 +386,8 @@ picture {
 
 @media screen and (max-width: 375px) {
   .pys {
-    width: 200px;
-    height: 200px; } }
+    width: 250px;
+    height: 250px; } }
 
 .galeriaDeImagenes {
   box-sizing: border-box;
@@ -426,13 +426,13 @@ picture {
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "aa" "bb" "cc" "dd" "ee" "ff"; } }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 530px) {
   .galeriaDeImagenes {
     padding: 0%;
     margin-top: 10px; }
   .gde {
-    height: 200px;
-    width: 200px; } }
+    height: 250px;
+    width: 250px; } }
 
 form {
   padding: 0rem;
