@@ -13,11 +13,8 @@
 
 html{
     font-size: 62.5%;
-    // font-family: $font-primary;
     font-family: "Mitr";
-    // color: white;
     color: rgb(255, 255, 255);
-    // text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
 }
 ul{
     list-style-type: none;
@@ -25,17 +22,13 @@ ul{
 }
 
 body{
-    // background-image: linear-gradient(to top, #d68233, $secondary, $secondary, $secondary, #d68233);
-    // background-image: linear-gradient(to top, #d68233, white, white, white, #d68233);
     text-decoration: none;
     display: row;
-    // grid-template-rows: auto 1fr auto ;
     background-image: url('https://static.vecteezy.com/system/resources/previews/005/880/495/large_2x/orange-lowpoly-background-free-vector.jpg')
 }
 a{
     text-decoration: none;
     display: inline-block;
-    // color: $secondary;
     color: white;
 } 
 

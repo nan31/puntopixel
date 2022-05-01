@@ -1,5 +1,4 @@
 header {
-    // background-color: $principal;
     text-align: center;
     background-color: #d68233;
     box-sizing: border-box;
@@ -19,11 +18,6 @@ header {
     & .menu {
         flex-basis: 65%;
         @include flex(row, flex-end, center, 5 5rem);
-
-
-        // & .menu__item {
-        //     // border: 2px solid #d68233;
-        // }
     }
 
     & .menu__link {
@@ -47,16 +41,13 @@ header {
     transition: transform 30ms ease-in-out;
 }
 
-    // &:hover {
-    //     // transform: scale(160%);
-    // }
-.hamburg{
-    display: none;
-}
-.menuHamburg{
+.hamburg {
     display: none;
 }
 
+.menuHamburg {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     header {
@@ -80,11 +71,10 @@ header {
 
     .menu {
         flex-basis: 80%;
-        // font-size: 0.7em;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr);
     }
-    
+
     @include flex(row, space-between, center, 5 5rem);
 }
 
@@ -101,51 +91,54 @@ header {
         max-width: 100%;
         padding: 0%;
 
-        &ul.menu{
+        &ul.menu {
             margin-left: 0;
         }
 
- 
+
     }
-    .logo{
+
+    .logo {
         padding-top: 1.5rem;
     }
 
 }
 
 @media screen and (max-width: 855px) {
-    .logo{
+    .logo {
         display: flex;
         padding-bottom: 1.5rem;
 
     }
-    .menuHamburg{
-    display: flex;
+
+    .menuHamburg {
+        display: flex;
     }
 
-    nav{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 2rem;
-    
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 2rem;
+
     }
-    
-    ul.menu{
-        display:none;
-      }
-      input.hamburg:checked  ~ ul.menu{
-        display:block;
-      }
-      
+
+    ul.menu {
+        display: none;
+    }
+
+    input.hamburg:checked~ul.menu {
+        display: block;
+    }
+
     //   input.hamburg {
     //     display: none;
     //   }
-      
-      label.menuHamburg {
+
+    label.menuHamburg {
         box-sizing: border-box;
         flex-direction: row;
         border-radius: 5px;
@@ -158,47 +151,33 @@ header {
         display: block;
         text-align: center;
         transition: all .5s;
-      }
-      
-    //   label.menuHamburg:hover{
-    //     background: rgb(236, 123, 89);
-    //   }
-      
-      input.menuHamburg:checked ~ label {
-        display: block; 
-      }
-      
-      li.menu__item.a{
-        margin-top:0;
+    }
+
+
+    input.menuHamburg:checked~label {
+        display: block;
+    }
+
+    li.menu__item.a {
+        margin-top: 0;
         padding: 0;
         width: 300px;
         flex-direction: column;
         display: block;
         text-align: center;
-        transition: all .5s;
-      }
-      
-      
-      li.menu__item {
+    }
+
+
+    li.menu__item {
         display: block;
         margin: 0;
         flex-direction: column;
         font-size: 10px;
         padding: 10px;
         list-style: none;
-      }
-      
-      li.menu__item:hover {
-        filter: brightness(500%);
-      }
     }
 
-    @media screen and (max-width: 855px){
-        .logo{
-            padding: 0%;
-        }
-        .pxl{
-            height: 250px;
-            width: 250px;
-        }
+    li.menu__item:hover {
+        filter: brightness(500%);
     }
+}

@@ -38,11 +38,18 @@
         gap: 5rem;
         text-align: center;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 0.5fr);
+        grid-template-rows: repeat(3, 0.1fr);
         grid-template-areas:
         "parrafo"
         "pxlsirius"
         "pxlnotebook"
         "pxlfadu"
     }
+}
+@media screen and (max-width:1030px) {
+   .img-pxlfadu, .img-pxlsirius, .img-pxlnotebook{
+        height: 200px;
+        width: 200px;
+
+}
 }

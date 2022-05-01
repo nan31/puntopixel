@@ -1,5 +1,4 @@
 .articuloPpal{
-    // align-items: center;
     @include flex(row, space-between, center, 5rem, nowrap); 
     font-size: 2em;
     padding: 5rem;
@@ -25,6 +24,16 @@ picture{
     .articuloPpal{
         flex-wrap: wrap;
         box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 855px){
+        .logo{
+            padding: 0%;
+        }
+        .pxl{
+            height: 250px;
+            width: 250px;
+        }
     }
 
 }
